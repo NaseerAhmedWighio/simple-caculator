@@ -1,0 +1,23 @@
+
+.text-center{
+    text-align: center;
+    font: GOTHIC;
+}
+.bg-red{
+    background-color:rgb(72, 135, 252);
+    width: 300px;
+    height: 450px;
+    border-radius: 5px;
+}
+.mx-auto{
+    margin: auto;
+}
+.flex {
+display: flex;
+}
+.flex-col{
+flex-direction: column;
+}
+.items-center{
+    align-items: center;
+}
