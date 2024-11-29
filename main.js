@@ -1,19 +1,31 @@
-let string= "";
-let buttons = document.querySelectorAll('.button')
-Array.from (buttons) .forEach((button)=> {
-    button.addEventListener('click', (e)=>{
-        if (e.target.innerHTML== '='){
-            string = eval(string);
-            document.querySelector('input').value = string;
-        }else if (e.target.innerHTML== "C"){
-            string ="";
-            document.querySelector('input').value = string;
+var expression = "";
+var buttons = document.querySelectorAll('.button');
+Array.from(buttons).forEach(function (button) {
+    button.addEventListener('click', function (e) {
+        var target = e.target;
+        if (target.innerHTML === '=') {
+            try {
+                expression = eval(expression);
+                var input = document.querySelector('input');
+                if (input)
+                    input.value = expression;
+            }
+            catch (error) {
+                console.error("Error evaluating the expression", error);
+            }
         }
-        else{
-            console.log(e.target)
-            string=string + e.target.innerHTML;
-            document.querySelector('input').value= string;
+        else if (target.innerHTML === 'C') {
+            expression = "";
+            var input = document.querySelector('input');
+            if (input)
+                input.value = expression;
         }
-        
-    })
-})
+        else {
+            console.log(target);
+            expression += target.innerHTML;
+            var input = document.querySelector('input');
+            if (input)
+                input.value = expression;
+        }
+    });
+});

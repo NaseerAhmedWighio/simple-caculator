@@ -5,24 +5,35 @@ html, body {
     width: 100%;
     font-family: "Montserrat", sans-serif;
     margin-top: 20px;
+    background: linear-gradient(to right, #2196f3, #f44336);
 }
 #body{
     margin-top: 15px;
 }
+#bk{
+    margin-top: 50px;
+}
 h1{
-    background-color: rgb(72, 135, 252);
-    width: 400px;
-    margin: 0 0 20px 555px;
+    /* background-color: rgb(72, 135, 252); */
+    background: linear-gradient(to right, #b2459190, #f15f79);
+    margin-top: 50px;
+    width: 500px;
+    height: 42px;
     color: white;
+    font-size:35px;
+    border-radius: 5px;
 }
 .button{
     text-align: center;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     padding: 20px;
     font-size: 23px;
     margin: 0 3px;
-    border: 2px solid rgb(75, 52, 201);
+    color:white;
+    background: radial-gradient(#5e838c99, #3b75a48e);
+    /* background: linear-gradient(to right, #8e9eab, #eef2f3); */
+    border: 2px solid rgba(166, 241, 74, 0.489);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -42,7 +53,9 @@ h1{
     vertical-align: center;
     margin-left: 10px;
     padding: 17px 12px;
-    border: 2px solid rgb(75, 52, 201);
+    color: white;
+    background: linear-gradient(to right, #b2459190, #f15f79);
+    border: 2px solid rgba(166, 241, 74, 0.489);
     border-radius: 5px;
-    width: 244px;
+    width: 282px;
 } 
